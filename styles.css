@@ -30,6 +30,7 @@ a {font-weight: bold;}
 
 .container {
     width: max(320px, 60%);
+    max-width: 400px;
     background: url(./images/illustration-hero.svg) no-repeat;
     background-size: 100% 150px;
     background-color: var(--Very-pale-blue); 
@@ -77,6 +78,10 @@ a {font-weight: bold;}
 }
 
 .button a:last-of-type { display: inline-block;margin: 0 0 20px;}
+
+@media (min-width: 1080px) {
+    .container {width: 350px;}
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
