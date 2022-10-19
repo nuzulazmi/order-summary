@@ -2,13 +2,81 @@
 
 :root {
     --Pale-blue: hsl(225, 100%, 94%);
+    --Purple-button: hsl(256, 83%, 72%);
     --Bright-blue: hsl(245, 75%, 52%);
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
 }
 
-p {font-size: 16px;}
+body {
+    background-color: var(--Pale-blue);
+    margin: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p:not(.pricing p:first-of-type) { font-size: 16px;color: var(--Desaturated-blue);}
+
+section p:nth-of-type(1) {line-height: 1.5;}
+
+h1 {font-size: 25px;}
+
+a {font-weight: bold;}
+
+.container {
+    width: max(320px, 60%);
+    background: url(./images/illustration-hero.svg) no-repeat;
+    background-size: 100% 150px;
+    background-color: var(--Very-pale-blue); 
+    box-shadow: 0 0 40px var(--Desaturated-blue);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.container section {padding: 160px 25px 0;}
+
+.price-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.price-box .pricing {justify-self: flex-start;}
+
+.price-box .pricing p {margin: 0;}
+
+.price-box a {color: var(--Bright-blue);}
+
+.price-box a:hover {color: var(--Purple-button);text-decoration: none;}
+
+.button a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px 0;
+    color: var(--Dark-blue);
+}
+
+.button a:first-of-type {
+    padding: 15px 20px;
+    background-color: var(--Bright-blue);
+    color: white;
+    transition: background-color 0.4s;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px var(--Desaturated-blue);
+}
+
+.button a:first-of-type:hover {
+    background-color: var(--Purple-button);  
+}
+
+.button a:last-of-type { display: inline-block;margin: 0 0 20px;}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
