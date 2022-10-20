@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://www.frontendmentor.io/profile/nuzulazmi/solutions)
-- Live Site URL: (https://nuzulazmi.github.io/order-summary-component-main/)
+- Live Site URL: (https://nuzulazmi.github.io/order-summary/)
 
 ## My process
 
@@ -57,7 +57,7 @@ grid-template-columns: auto auto auto;
 }
 ```
 Note: property "grid-template-columns" will only work if the parent element is given the property "display: grid;".
-The "grid-template-columns" property has several values ​​including: "auto, max-content, min-content, initial, inherit, length;"
+The "grid-template-columns" property has several values including: "auto, max-content, min-content, initial, inherit, length;"
 
 ### Continued development
 
