@@ -2,6 +2,7 @@
 
 :root {
     --Pale-blue: hsl(225, 100%, 94%);
+    --Pale-blue-2: hsl(227, 100%, 97%);
     --Purple-button: hsl(256, 83%, 72%);
     --Bright-blue: hsl(245, 75%, 52%);
     --Very-pale-blue: hsl(225, 100%, 98%);
@@ -10,13 +11,16 @@
 }
 
 body {
-    background-color: var(--Pale-blue);
-    margin: 50px 0;
-    min-height: 100vh;
+    background: url(./images/pattern-background-mobile.svg) no-repeat;
+    background-size: 100%;
+    margin: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    transition: 1s;
+    background-color: var(--Pale-blue);
     font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -31,11 +35,13 @@ a {font-weight: bold;}
 .container {
     width: max(320px, 60%);
     max-width: 400px;
+    margin: 50px 0;
     background: url(./images/illustration-hero.svg) no-repeat;
     background-size: 100% 150px;
     background-color: var(--Very-pale-blue); 
     box-shadow: 0 0 40px var(--Desaturated-blue);
     text-align: center;
+    overflow: hidden;
     border-radius: 20px;
 }
 
@@ -46,6 +52,10 @@ a {font-weight: bold;}
     grid-template-columns: auto auto auto;
     justify-items: center;
     align-items: center;
+    margin: 30px 0;
+    height: 70px;
+    background-color: var(--Pale-blue-2);
+    border-radius: 10px;
 }
 
 .price-box .pricing {justify-self: flex-start;}
@@ -73,14 +83,20 @@ a {font-weight: bold;}
     box-shadow: 0 15px 40px var(--Desaturated-blue);
 }
 
-.button a:first-of-type:hover {
-    background-color: var(--Purple-button);  
-}
+.button a:first-of-type:hover { background-color: var(--Purple-button);}
 
-.button a:last-of-type { display: inline-block;margin: 0 0 20px;}
+.button a:last-of-type { display: inline-block;margin: 0 0 30px;}
 
+/*Media Queries (Desktop)*/
 @media (min-width: 1080px) {
     .container {width: 350px;}
+
+    body {
+        background: url(./images/pattern-background-desktop.svg) no-repeat;
+        background-size: 100%;
+        transition: 1s;
+        background-color: var(--Pale-blue);
+    }
 }
 
 .attribution { font-size: 11px; text-align: center; }
