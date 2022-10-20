@@ -75,7 +75,7 @@ a {font-weight: bold;}
 }
 
 .button a:first-of-type {
-    padding: 15px 20px;
+    padding: 12px 20px;
     background-color: var(--Bright-blue);
     color: white;
     transition: background-color 0.4s;
