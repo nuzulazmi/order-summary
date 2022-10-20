@@ -89,7 +89,7 @@ a {font-weight: bold;}
 
 /*Media Queries (Desktop)*/
 @media (min-width: 1080px) {
-    .container {width: 450px;background-size: 100% 200px;}
+    .container { width: 500px; background-size: 100% 200px; margin: 100px 0;}
 
     .button a:last-of-type { display: inline-block;margin: 0 0 40px;}
 
