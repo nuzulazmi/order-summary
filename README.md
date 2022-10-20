@@ -1,6 +1,6 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - Order summary card solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://www.frontendmentor.io/profile/nuzulazmi/solutions)
-- Live Site URL: (https://nuzulazmi.github.io/product-preview-card/)
+- Live Site URL: (https://nuzulazmi.github.io/order-summary-component-main/)
 
 ## My process
 
@@ -42,6 +42,7 @@ Users should be able to:
 - CSS custom properties
 - CSS Grid
 - Media Queries
+- Mobile-first workflow
 
 ### What I learned
 
