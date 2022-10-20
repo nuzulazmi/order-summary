@@ -89,7 +89,7 @@ a {font-weight: bold;}
 
 /*Media Queries (Desktop)*/
 @media (min-width: 1080px) {
-    .container {width: 350px;}
+    .container {width: 450px;}
 
     body {
         background: url(./images/pattern-background-desktop.svg) no-repeat;
